@@ -88,6 +88,10 @@ rs6000-c.o: $(srcdir)/config/rs6000/rs6000-c.cc rs6000-builtins.h
 	$(COMPILE) $<
 	$(POSTCOMPILE)
 
+rs6000-jit.o: $(srcdir)/config/rs6000/rs6000-jit.cc rs6000-builtins.h
+	$(COMPILE) $<
+	$(POSTCOMPILE)
+
 #$(srcdir)/config/rs6000/fusion.md: $(srcdir)/config/rs6000/genfusion.pl
 #	$(srcdir)/config/rs6000/genfusion.pl > $(srcdir)/config/rs6000/fusion.md
 

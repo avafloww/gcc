@@ -775,11 +775,11 @@ case ${target} in
   c_target_objs="${c_target_objs} darwin-c.o"
   cxx_target_objs="${cxx_target_objs} darwin-c.o"
   d_target_objs="${d_target_objs} darwin-d.o"
-  #jit_target_objs="${jit_target_objs} darwin-jit.o"
+  jit_target_objs="${jit_target_objs} darwin-jit.o"
   fortran_target_objs="darwin-f.o"
   target_has_targetcm=yes
   target_has_targetdm=yes
-  #target_has_targetjitm=yes
+  target_has_targetjitm=yes
   extra_objs="${extra_objs} darwin.o"
   extra_gcc_objs="darwin-driver.o"
   default_use_cxa_atexit=yes

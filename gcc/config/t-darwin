@@ -37,3 +37,7 @@ darwin-f.o: $(srcdir)/config/darwin-f.cc
 darwin-driver.o: $(srcdir)/config/darwin-driver.cc
 	$(COMPILE) $<
 	$(POSTCOMPILE)
+
+darwin-jit.o: $(srcdir)/config/darwin-jit.cc
+	$(COMPILE) $<
+	$(POSTCOMPILE)

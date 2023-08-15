@@ -4197,7 +4197,7 @@ if test $in_tree_ld = yes || test x"$gnu_ld" = xyes; then
   gcc_cv_ld_soname=yes
   ld_soname_option='-soname'
 elif test x$gcc_cv_ld != x; then
-  case "$target" in
+  case "$host" in
     *-*-darwin*)
       gcc_cv_ld_soname=yes
       ld_soname_option='-install_name'
